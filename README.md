@@ -1,22 +1,31 @@
-# TeleDark
-An advance Administration bot based on yagop/telegram-bot
+TeleDark Unofficial Bot
+============
 
-@font-face {
-  font-family: Shabnam;
-  src: url('https://raw.githubusercontent.com/amirhmz/shabnam-font/master/Shabnam.eot');
-  src: url('https://raw.githubusercontent.com/amirhmz/shabnam-font/master/Shabnam.eot?#iefix') format('embedded-opentype'),
-       url('https://raw.githubusercontent.com/amirhmz/shabnam-font/master/Shabnam.woff') format('woff'),
-       url('https://raw.githubusercontent.com/amirhmz/shabnam-font/master/Shabnam.ttf') format('truetype');
-  font-weight: normal;
-}
+**مـــــــــــــــراحل نصب**
+============
 
-@font-face {
-  font-family: Shabnam;
-  src: url('https://raw.githubusercontent.com/amirhmz/shabnam-font/master/Shabnam-Bold.eot');
-  src: url('https://raw.githubusercontent.com/amirhmz/shabnam-font/master/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
-       url('https://raw.githubusercontent.com/amirhmz/shabnam-font/master/Shabnam-Bold.woff') format('woff'),
-       url('https://raw.githubusercontent.com/amirhmz/shabnam-font/master/Shabnam-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
+```bash
+# Tested on Ubuntu 14.04, for other OSs check out https://github.com/yagop/telegram-bot/wiki/Installation
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev
+```
 
-# تله دارک
+```bash
+# lets install the bot
+cd $HOME
+git clone https://github.com/amirhmz/TeleDark.git
+git clone --recursive https://github.com/SEEDTEAM/tg.git && cd tg
+cd TeleDark
+chmod +x launch.sh
+./launch.sh install
+./launch.sh # Enter a phone number & confirmation code.
+
+تماس با ما
+================
+
+[AmirDark](https://github.com/amirhmz) ([Telegram](https://telegram.me/AmirDark))
+
+[PokerFace](http://github.com/MojtabaMonfared) ([Telegram](https://telegram.me/PokerFace_Dev))
+
+[MR.Flat](http://github.com/telergybot) ([Telegram](https://telegram.me/mr_flat))
+
+Our cahnnel > [@TeleDarkCh](https://telegram.me/teledarkch)
