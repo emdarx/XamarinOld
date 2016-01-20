@@ -10,10 +10,15 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ```
 
 ```bash
+# lets install the Telegram Cli
+cd $HOME
+git clone --recursive https://github.com/SEEDTEAM/tg.git && cd tg
+```
+
+```bash
 # lets install the bot
 cd $HOME
 git clone https://github.com/amirhmz/TeleDark.git
-git clone --recursive https://github.com/SEEDTEAM/tg.git && cd tg
 cd TeleDark
 chmod +x launch.sh
 ./launch.sh install
