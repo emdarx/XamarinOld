@@ -18,6 +18,7 @@ cd TeleDark
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
+```
 
 تماس با ما
 ================
