@@ -220,6 +220,7 @@ function create_config( )
     "invite",
     "all",
     "leave_ban"
+    "block_user"
     },
     sudo_users = {119626024,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
