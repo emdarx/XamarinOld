@@ -221,6 +221,17 @@ function create_config( )
     "all",
     "leave_ban"
     "block_user"
+    "salam"
+    "fosh"
+    "wiki"
+    "echo"
+    "feedback"
+    "qr"
+    "tex"
+    "calc"
+    "autoleave"
+    "seedflood"
+    "plugins"
     },
     sudo_users = {119626024,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
