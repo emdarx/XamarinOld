@@ -5,18 +5,18 @@ TeleDark Unofficial Bot
 ============
 
 ```bash
-# ابتدا sudo lua را نصب میکنیم
+# را نصب میکنیم sudo lua ابتدا
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev
 ```
 
 ```bash
-# lets install the Telegram Cli
+# را نصب میکنیم Telegram Cli سپس
 cd $HOME
 git clone --recursive https://github.com/SEEDTEAM/tg.git && cd tg
 ```
 
 ```bash
-# lets install the bot
+# را نصب و اجرا میکنیم Bot و در آخر
 cd $HOME
 git clone https://github.com/amirhmz/TeleDark.git
 cd TeleDark
