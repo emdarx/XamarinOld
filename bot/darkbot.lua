@@ -232,7 +232,6 @@ function create_config( )
     "autoleave",
     "tosupport",
     "google",
-    "weather",
     "plugins",
     "all",
     },
