@@ -21,7 +21,7 @@ function on_msg_receive (msg)
     msg = pre_process_msg(msg)
     if msg then
       match_plugins(msg)
-  --   mark_read(receiver, ok_cb, false)
+      mark_read(receiver, ok_cb, false)
     end
   end
 end
@@ -249,6 +249,7 @@ function create_config( )
         @PokerFace_Dev
         @MR_Flat
         @ShahaWwB
+        @Sinaw1
   
   Checkout yon.ir/Ng0W
 ]],
