@@ -20,7 +20,7 @@ git clone --recursive https://github.com/amirhmz/tg && cd tg
 cd $HOME
 git clone https://github.com/amirhmz/TeleDark.git
 cd TeleDark
-chmod +x launch.sh
+chmod +x ./launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
 ```
