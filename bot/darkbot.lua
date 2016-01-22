@@ -21,7 +21,7 @@ function on_msg_receive (msg)
     msg = pre_process_msg(msg)
     if msg then
       match_plugins(msg)
-      mark_read(receiver, ok_cb, false)
+ --     mark_read(receiver, ok_cb, false)
     end
   end
 end
@@ -238,9 +238,9 @@ function create_config( )
     sudo_users = {119626024,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[TeleDark Anti Spam Bot v3.5
+    about_text = [[Xamarin Anti Spam Bot v1.2
     
-  📢 Channel : @TeleDarkCh
+  📢 Channel : @XamarinCh
   👤 Admin : @AmirDark
   
   🙏 Special Thanks :
@@ -251,7 +251,7 @@ function create_config( )
         @ShahaWwB
         @Sinaw1
   
-  Checkout yon.ir/Ng0W
+  Checkout yon.ir/XamarinTG
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -443,7 +443,7 @@ This command will send text to [group_id]
 !tosupport
 
 💬 توضيحات ضد اسپم
-!teledark
+!xamarin
 
 💬 راهنمای ربات (همین متن)
 !help
