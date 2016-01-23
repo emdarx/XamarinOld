@@ -21,7 +21,7 @@ function on_msg_receive (msg)
     msg = pre_process_msg(msg)
     if msg then
       match_plugins(msg)
- --     mark_read(receiver, ok_cb, false)
+      mark_read(receiver, ok_cb, false)
     end
   end
 end
