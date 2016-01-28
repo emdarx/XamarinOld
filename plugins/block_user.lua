@@ -2,10 +2,12 @@ local function run(msg, matches)
     if matches[1] == "block" then
 	local user_id = "user#id"..matches[2]
 	block_user(user_id, ok_cb, false)
+	return "The user was blocked"
     end
     if matches[1] == "unblock" then
 	local user_id = "user#id"..matches[2]
 	unblock_user(user_id, ok_cb, false)
+	return "The user was unblocked"
     end
 end
 
