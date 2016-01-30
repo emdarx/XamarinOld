@@ -205,6 +205,7 @@ function create_config( )
   config = {
     enabled_plugins = {
     "onservice",
+    "admin",
     "inrealm",
     "ingroup",
     "inpm",
@@ -220,7 +221,6 @@ function create_config( )
     "download_media",
     "invite",
     "leave_ban",
-    "block_user",
     "salam",
     "fosh",
     "wiki",
@@ -229,7 +229,6 @@ function create_config( )
     "qr",
     "tex",
     "calc",
-    "autoleave",
     "tosupport",
     "google",
     "plugins",
