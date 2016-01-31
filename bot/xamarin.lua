@@ -244,7 +244,7 @@ function create_config( )
     sudo_users = {119626024,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[⚡ Xamarin Anti Spam Bot v1.4
+    about_text = [[⚡️ Xamarin Anti Spam Bot v1.5
     
   📢 Channel : @XamarinCh
   👤 Admin : @AmirDark
@@ -254,10 +254,13 @@ function create_config( )
         @mehrab_wj
         @PokerFace_Dev
         @MR_Flat
-        @ShahaWwB
+        @PatriWwK
         @Sinaw1
+
+📝 Please send your feedback
+The command /feedback [text]
   
-  Checkout yon.ir/XamarinTG
+⚡️ Checkout yon.ir/XamarinTG
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -376,11 +379,11 @@ This command will send text to [group_id]
 📃 انتخاب توضيحات گروه
 !set about <متن مورد نظر>
 
-🔒 قفل اعضا ، نام گروه و ربات
-!lock [member|name|bots]
+🔒 قفل اعضا ، نام گروه ، ربات و ...
+!lock [member|name|bots|tag|link|fosh|join|arabic|english]
 
 🔓 باز کردن قفل اعضا ، نام گروه و ...
-!unlock [member|name|photo|bots]
+!unlock [member|name|bots|tag|link|fosh|join|arabic|english]
 
 📥 دريافت یوزر آی دی گروه يا کاربر
 !id
@@ -442,11 +445,20 @@ This command will send text to [group_id]
 🌐 جستجو در ویکی پديا فارسی
 !wikifa [متن]
 
+👀 جستجو در گوگل
+!google [متن]
+
+☀️ هواشناسی و وضعیت هوا
+!weather [نام شهر]
+
 📢 ارتباط با پشتیبانی ربات
 !feedback [متن پیام]
 
 🔍 دریافت لینک گروه پشتیبانی
 !tosupport
+
+👤 اضافه کردن ادمین ربات به گروه
+!addsudo
 
 💬 توضيحات ضد اسپم
 !xamarin
