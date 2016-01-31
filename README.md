@@ -1,5 +1,5 @@
 ***
-# <p align="center">Xamarin(Zamarin)
+# <p align="center">Xamarin (Zamarin)
 ####<p align="center">**Telegram Group Manager For Iranian User**
 <p align="center">Created By ♥ In Iran
 ***
@@ -340,17 +340,17 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ```bash
 # After those dependencies, lets install the bot
 cd $HOME
-git clone https://github.com/MojtabaMonfared/ElevenFiftyOne.git
-cd ElevenFiftyOne(1151)
+git clone https://github.com/amirhmz/Xamarin.git
+cd Xamarin
 ./launch.sh install
 ./launch.sh # Set PhoneNumber and Confrimation Code.
 ```
 ##One Command :) 
 ```bash
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/MojtabaMonfared/ElevenFiftyOne.git && cd ElevenFiftyOne && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/amirhmz/Xamarin.git && cd Xamarin && ./launch.sh install && ./launch.sh
 ```
 
-Enable more [`plugins`](https://github.com/MojtabaMonfared/ElevenFiftyOne/tree/master/plugins)
+Enable more [`plugins`](https://github.com/amirhmz/Xamarin/tree/master/plugins)
 
 ***
 ### Realm Configuration
