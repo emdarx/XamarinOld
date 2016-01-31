@@ -210,6 +210,7 @@ function create_config( )
     enabled_plugins = {
     "onservice",
     "admin",
+    "addsudo",
     "inrealm",
     "ingroup",
     "inpm",
@@ -238,6 +239,7 @@ function create_config( )
     "calc",
     "tosupport",
     "google",
+    "weather",
     "plugins",
     "all",
     },
