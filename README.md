@@ -132,7 +132,7 @@
 >>>This command will set [User_id] as the owner of [group_id]
 
 ### Bot stats 
->/stats ElevenFiftyOne(1151)
+>/stats xamarin
 >>This command will return bot stats
 
 ## owners and mods commands
@@ -400,7 +400,7 @@ For Help To This Project Please pay for [محک]
 _For Iranian_
 ***
 
-#Contact Me
+# Contact Me
 | Bot | Channel | Telegram | Email |
 |---------|--------|-------| ----- |
 | [Bot](https://telegram.me/XamarinTG) | [Join](https://telegram.me/DarkBotCh) | [Developer](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) |
