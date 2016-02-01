@@ -339,13 +339,13 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
- 
-📝 ليست دستورات مدیریتی :
+    
+📝 ليست دستورات مدیریت گروه :
 
 🚫 حذف کردن کاربر
 !kick [یوزنیم/یوزر آی دی]
 
-🚫 بن کردن کاربر ( حذف برای همیشه )
+🚫 کردن کاربر ( حذف برای همیشه )
 !ban [یوزنیم/یوزر آی دی]
 
 🚫 حذف بن کاربر ( آن بن )
@@ -354,10 +354,13 @@ This command will send text to [group_id]
 🚫 حذف خودتان از گروه
 !kickme
 
+🚫 حذف کاربران غیر فعال
+!kickinactive
+
 👥 دريافت ليست مديران گروه
 !modlist
 
-👥 افزودن مدير برای گروه
+👥 افزودن یک مدیر به گروه
 !promote [یوزنیم]
 
 👥 حذف کردن یک مدير
@@ -376,10 +379,10 @@ This command will send text to [group_id]
 !setname [نام مورد نظر]
 
 📜 انتخاب قوانين گروه
-!set rules <متن قوانین>
+!set rules [متن قوانین]
 
 📃 انتخاب توضيحات گروه
-!set about <متن مورد نظر>
+!set about [متن مورد نظر]
 
 🔒 قفل اعضا ، نام گروه ، ربات و ...
 !lock [member|name|bots|tag|link|fosh|join|arabic|english]
@@ -398,6 +401,9 @@ This command will send text to [group_id]
 
 📌 دريافت لينک گروه
 !link
+
+📌 دريافت لينک گروه در پی وی
+!linkpv
 
 🛃 انتخاب مدير اصلی گروه
 !setowner [یوزر آی دی]
@@ -429,13 +435,17 @@ This command will send text to [group_id]
 🚸 دريافت ليست کاربران بن شده
 !banlist
 
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
+📝 ليست دستورات ابزار ها :
+
 🌀 تکرار متن مورد نظر شما
 !echo [متن]
 
-🃏 ساخت متن نوشته
+🃏 ساخت عکس نوشته
 !tex [متن]
 
-🃏 ساخت QR بارکد
+🃏 ساخت بارکد QR
 !qr [متن]
 
 ⌨ انجام محاسبات ریاضی
@@ -447,7 +457,7 @@ This command will send text to [group_id]
 🌐 جستجو در ویکی پديا فارسی
 !wikifa [متن]
 
-👀 جستجو در گوگل
+🌐 جستجو در گوگل
 !google [متن]
 
 ☀️ هواشناسی و وضعیت هوا
@@ -469,6 +479,10 @@ This command will send text to [group_id]
 !help
 
 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
+⚠️ هرگونه سوال یا مشکل در ربات
+را از طریق دستور فیدبک برای مدیران
+ربات ارسال و منتظر جواب باشید.
 
 ⚠️  شما ميتوانيد از ! و / استفاده کنيد. 
 
