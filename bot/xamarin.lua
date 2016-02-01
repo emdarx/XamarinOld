@@ -256,8 +256,7 @@ function create_config( )
         @mehrab_wj
         @PokerFace_Dev
         @MR_Flat
-        @PatriWwK
-        @Sinaw1
+        @SinAw1
 
 📝 Please send your feedback
 The command /feedback [text]
@@ -265,78 +264,79 @@ The command /feedback [text]
 ⚡️ Checkout yon.ir/XamarinTG
 ]],
     help_text_realm = [[
-Realm Commands:
+    
+📝 لیست دستورات Realm :
 
-!creategroup [Name]
-Create a group
+✏️ ساخت یک گروه جدید
+!creategroup [نام گروه]
 
-!createrealm [Name]
-Create a realm
+🖍 ساخت یک گروه Realm جدید
+!createrealm [نام گروه]
 
-!setname [Name]
-Set realm name
+✏️ تغییر نام گروه Realm
+!setname [نام مورد نظر]
 
-!setabout [GroupID] [Text]
-Set a group's about text
+🏳 تغییر توضیحات یک گروه
+!setabout [کد گروه] [متن]
 
-!setrules [GroupID] [Text]
-Set a group's rules
+🏳 تغییر قوانین یک گروه
+!setrules [کد گروه] [متن]
 
-!lock [GroupID] [setting]
-Lock a group's setting
+🏳 قفل تنظیمات یک گروه
+!lock [کد گروه] [bots|name...]
 
-!unlock [GroupID] [setting]
-Unock a group's setting
+🏳 باز کردن قفل تنظیمات یک گروه
+!unlock [کد گروه] [bots|name...]
 
-!wholist
-Get a list of members in group/realm
-
-!who
-Get a file of members in group/realm
-
+📝 مشاهده نوع گروه (گروه یا Realm)
 !type
-Get group type
 
-!kill chat [GroupID]
-Kick all memebers and delete group
+📝 دریافت لیست کاربران (متن)
+!wholist
 
-!kill realm [RealmID]
-Kick all members and delete realm
+📝 دریافت لیست کاربران (فایل)
+!who
 
-!addadmin [id|username]
-Promote an admin by id OR username *Sudo only
+🚫 حذف کاربران و پاک کردن گروه
+!kill chat [کد گروه]
 
-!removeadmin [id|username]
-Demote an admin by id OR username *Sudo only
+🚫 حذف کاربران و پاک کردن Realm
+!kill realm [کد ریالیم]
 
+👥 افزودن ادمین به ربات
+!addadmin [نام کاربری|یوزر آی دی]
+
+👥 حذف کردن ادمین از ربات
+!removeadmin [نام کاربری|یوزر آی دی]
+
+🌐 دریافت لیست گروه ها
 !list groups
-Get a list of all groups
 
+🌐 دریافت لیست Realm ها
 !list realms
-Get a list of all realms
 
+🗯 دریافت لاگ Realn
 !log
-Grt a logfile of current group or realm
 
-!broadcast [text]
-!broadcast Hello !
-Send text to all groups
-Only sudo users can run this command
+📢 ارسال پیام به همه گروه ها
+!broadcast [متن پیام]
 
-!br [group_id] [text]
-!br 123456789 Hello !
-This command will send text to [group_id]
+📢 ارسال پیام به یک گروه خاص
+!br [کد گروه] [متن پیام]
 
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 
-**U can use both "/" and "!" 
+⚠️  شما ميتوانيد از ! و / استفاده کنيد. 
 
+⚠️ تنها مدیران ربات و سودو ها
+میتوانند جزییات مدیریتی سایر گروه
+های ربات را ویرایش یا حذف نمایند.
 
-*Only admins and sudo can add bots in group
+⚠️  تنها سودو ربات میتواند
+گروهی را بسازد یا حذف کند.
 
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 
-*Only admins and sudo can use kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
     
