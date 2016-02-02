@@ -12,7 +12,6 @@
 | [Private command](#in private commands) |
 | [Installation](#installation) |
 | [Realm Config](#realm configuration) |
-| [Donote](#donote me) |
 | [Contact Me](#contact me) |
 ***
 # Commands 
@@ -193,7 +192,7 @@ _Sudo users and admins can also use this commands in all groups_
 
 ### Changing Group name
 >/setname [name]
->>/setname SEED
+>>/setname Xamarin
 >>>This command will set [name] as name of groups
 
 ### Group link
@@ -377,27 +376,17 @@ realm = {Your Realm ID},#Realms ID
 then start the bot again :D
 
 ***
-## feedBack.lua Configuration
+## feedback.lua Configuration
 After Your Bot Run for first time,turn it off
-go to /plugins/feedback.lua and in line 36
+go to /plugins/feedback.lua and in line 8
 Set Your Realm ID in 
 User msg Send To This Group :|
 ```lua
-local sends0 = send_msg('chat#id..Your ID', fuse, ok_cb, false)
--- like local sends0 = send_msg('chat#id..1234567', fuse, ok_cb, false)
+ local chat = "chat#id"..83535263 
+   --like : local chat = "chat#id"..12345678
 ```
 CTRL+S For Save it
 and start again
-***
-| Source Stat |
-|------|-------|------|
-| Fork | issue | Star |
-|      |       |      |
-
-***	
-# Donote Me ♥
-For Help To This Project Please pay for [محک]
-_For Iranian_
 ***
 
 # Contact Me
@@ -408,4 +397,4 @@ _For Iranian_
 > _If you are using /join service for first time_
 >> _you have to send it 11 time ( Bot is spam reported )_
 
-# Enjoy it
+# Enjoy it  ♥ 
