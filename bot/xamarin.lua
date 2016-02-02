@@ -229,6 +229,7 @@ function create_config( )
     "download_media",
     "invite",
     "leave_ban",
+    "spammer",
     "salam",
     "fosh",
     "wiki",
