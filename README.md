@@ -340,7 +340,7 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ```bash
 # را نصب میکنیم Telegram Cli سپس
 cd $HOME
-git clone --recursive https://github.com/SEEDTEAM/tg.git && cd tg
+git clone --recursive https://github.com/amirhmz/tg.git && cd tg
 ```
 
 ```bash
