@@ -220,7 +220,7 @@ function create_config( )
     "antitag",
     "antilink",
     "lock_join",
-    "seedflood",
+    "xamar",
     "owners",
     "arabic_lock",
     "set",
