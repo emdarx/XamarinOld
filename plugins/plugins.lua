@@ -129,7 +129,7 @@ local function disable_plugin_on_chat(receiver, plugin)
   _config.disabled_plugin_on_chat[receiver][plugin] = true
 
   save_config()
-  return 'Plugin '..plugin..' disabled on this chat'
+  return 'Plugin '..plugin..' disabled on this group'
 end
 
 local function reenable_plugin_on_chat(receiver, plugin)
@@ -157,7 +157,7 @@ local function run(msg, matches)
   end
 
   -- Re-enable a plugin for this chat
-  if matches[1] == '+' and matches[3] == 'chat' then
+  if matches[1] == '+' and matches[3] == 'group' then
     local receiver = get_receiver(msg)
     local plugin = matches[2]
     print("enable "..plugin..' on this chat')
@@ -172,10 +172,10 @@ local function run(msg, matches)
   end
 
   -- Disable a plugin on a chat
-  if matches[1] == '-' and matches[3] == 'chat' then
+  if matches[1] == '-' and matches[3] == 'group' then
     local plugin = matches[2]
     local receiver = get_receiver(msg)
-    print("disable "..plugin..' on this chat')
+    print("disable "..plugin..' on this group')
     return disable_plugin_on_chat(receiver, plugin)
   end
 
@@ -198,8 +198,8 @@ return {
   description = "Plugin to manage other plugins. Enable, disable or reload.", 
   usage = {
       moderator = {
-          "!plugins - [plugin] chat : disable plugin only this chat.",
-          "!plugins + [plugin] chat : enable plugin only this chat.",
+          "!plugins - [plugin] group : disable plugin only this group.",
+          "!plugins + [plugin] group : enable plugin only this group.",
           },
       sudo = {
           "!plugins : list all plugins.",
@@ -211,8 +211,8 @@ return {
     "^[!/]plugins$",
     "^[!/]plugins? (+) ([%w_%.%-]+)$",
     "^[!/]plugins? (-) ([%w_%.%-]+)$",
-    "^[!/]plugins? (+) ([%w_%.%-]+) (chat)",
-    "^[!/]plugins? (-) ([%w_%.%-]+) (chat)",
+    "^[!/]plugins? (+) ([%w_%.%-]+) (group)",
+    "^[!/]plugins? (-) ([%w_%.%-]+) (group)",
     "^[!/]plugins? (?)$" },
   run = run,
   moderated = true, -- set to moderator mode
