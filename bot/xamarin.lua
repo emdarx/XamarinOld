@@ -236,6 +236,7 @@ function create_config( )
     "echo",
     "feedback",
     "qr",
+    "joke",
     "tex",
     "calc",
     "tosupport",
@@ -439,6 +440,9 @@ The command /feedback [text]
 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 
 📝 ليست دستورات ابزار ها :
+
+😂 ارسال جک های خفن
+!joke
 
 🌀 تکرار متن مورد نظر شما
 !echo [متن]
