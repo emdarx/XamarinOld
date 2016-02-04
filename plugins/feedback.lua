@@ -1,3 +1,6 @@
+ -- FeedBack Plugin For Xamarin Source v1.2
+ --https://github.com/amirhmz
+ --Telegram.me/AmirDark
 do
  function run(msg, matches)
  
@@ -24,3 +27,5 @@ do
   },
   run = run
  }
+ --https://github.com/amirhmz
+ --Telegram.me/AmirDark
