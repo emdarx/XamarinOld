@@ -42,7 +42,7 @@ local function list_all_plugins(only_enabled)
       text = text..nsum..'. '..v..'  '..status..'\n'
     end
   end
-  local text = text..'\nThere are '..nsum..' plugins installed.\n'..nact..' plugins enabled and '..nsum-nact..' disabled'
+  local text = text..'\nدر مجموع '..nsum..' افزونه وجود دارد.\n'..nact..' افزونه فعال و '..nsum-nact..' غیر فعال'
   return text
 end
 
@@ -67,7 +67,7 @@ local function list_plugins(only_enabled)
       text = text..v..'  '..status..'\n'
     end
   end
-  local text = text..'\n'..nact..' plugins enabled from '..nsum..' plugins installed.'
+  local text = text..'\n'..nact..' افزونه فعال میباشد از '..nsum..' افزونه نصب شده.'
   return text
 end
 
@@ -82,7 +82,7 @@ local function enable_plugin( plugin_name )
   print('checking if '..plugin_name..' exists')
   -- Check if plugin is enabled
   if plugin_enabled(plugin_name) then
-    return 'Plugin '..plugin_name..' is enabled'
+    return '✅ افزونه '..plugin_name..' فعال است.'
   end
   -- Checks if plugin exists
   if plugin_exists(plugin_name) then
@@ -93,19 +93,19 @@ local function enable_plugin( plugin_name )
     -- Reload the plugins
     return reload_plugins( )
   else
-    return 'Plugin '..plugin_name..' does not exists'
+    return '⛔️ افزونه '..plugin_name..' وجود ندارد.'
   end
 end
 
 local function disable_plugin( name, chat )
   -- Check if plugins exists
   if not plugin_exists(name) then
-    return 'Plugin '..name..' does not exists'
+     return '⛔️ افزونه '..name..' وجود ندارد.'
   end
   local k = plugin_enabled(name)
   -- Check if plugin is enabled
   if not k then
-    return 'Plugin '..name..' not enabled'
+    return '⛔️ افزونه '..name..' فعال نیست.'
   end
   -- Disable and reload
   table.remove(_config.enabled_plugins, k)
@@ -115,7 +115,7 @@ end
 
 local function disable_plugin_on_chat(receiver, plugin)
   if not plugin_exists(plugin) then
-    return "Plugin doesn't exists"
+    return "⛔️ این افزونه وجود ندارد."
   end
 
   if not _config.disabled_plugin_on_chat then
@@ -129,7 +129,7 @@ local function disable_plugin_on_chat(receiver, plugin)
   _config.disabled_plugin_on_chat[receiver][plugin] = true
 
   save_config()
-  return '⛔️ پلاگین '..plugin..' در این گروه غیر فعال شد.'
+    return '⛔️ افزونه '..plugin..' غیر فعال شد.'
 end
 
 local function reenable_plugin_on_chat(receiver, plugin)
@@ -142,12 +142,12 @@ local function reenable_plugin_on_chat(receiver, plugin)
   end
 
   if not _config.disabled_plugin_on_chat[receiver][plugin] then
-    return 'This plugin is not disabled'
+    return '⛔️ این افزونه غیر فعال است.'
   end
 
   _config.disabled_plugin_on_chat[receiver][plugin] = false
   save_config()
-  return 'Plugin '..plugin..' is enabled again'
+  return '✅ افزونه '..plugin..' مجددا فعال شد.'
 end
 
 local function run(msg, matches)
@@ -160,7 +160,7 @@ local function run(msg, matches)
   if matches[1] == '+' and matches[3] == 'group' then
     local receiver = get_receiver(msg)
     local plugin = matches[2]
-    print("enable "..plugin..' on this chat')
+    print("✅ افزونه "..plugin..' فعال شد.')
     return reenable_plugin_on_chat(receiver, plugin)
   end
 
@@ -175,7 +175,7 @@ local function run(msg, matches)
   if matches[1] == '-' and matches[3] == 'group' then
     local plugin = matches[2]
     local receiver = get_receiver(msg)
-    print("disable "..plugin..' on this group')
+     print("⛔️ افزونه "..plugin..' غیر فعال شد.')
     return disable_plugin_on_chat(receiver, plugin)
   end
 
