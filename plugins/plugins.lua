@@ -42,7 +42,7 @@ local function list_all_plugins(only_enabled)
       text = text..nsum..'. '..v..'  '..status..'\n'
     end
   end
-  local text = text..'\nدر مجموع '..nsum..' افزونه وجود دارد.\n'..nact..' افزونه فعال و '..nsum-nact..' غیر فعال'
+  local text = text..'\nدر مجموع '..nsum..' افزونه وجود دارد.\n'..nact..' افزونه فعال و '..nsum-nact..' افزونه غیر فعال.'
   return text
 end
 
@@ -67,7 +67,7 @@ local function list_plugins(only_enabled)
       text = text..v..'  '..status..'\n'
     end
   end
-  local text = text..'\n'..nact..' افزونه فعال میباشد از '..nsum..' افزونه نصب شده.'
+  local text = text..'\n'..nact..' افزونه فعال میباشد\n از '..nsum..' افزونه نصب شده.'
   return text
 end
 
