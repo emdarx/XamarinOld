@@ -38,6 +38,18 @@ end
 if msg.text == "?" then
 	return "Chiye?"
 end
+if msg.text == "؟" then
+	return "Kiiiiiir :|"
+end
+if msg.text == "BK" then
+	return "BK Ke BK 😐"
+end
+if msg.text == "Kir" then
+	return "Dos Dari?"
+end
+if msg.text == "kir" then
+	return "Dos Dari?"
+end
 if msg.text == "Bye" then
 	return "Bye Dayus"
 end
@@ -57,7 +69,7 @@ if msg.text == "امین" then
 	return "رفته استخر :|"
 end
 if msg.text == "زامارین" then
-	return "ها جیه؟"
+	return "ها چیه؟"
 end
 if msg.text == "ایلیا" then
 	return "با جیگرم چیکار داری؟"
@@ -65,11 +77,41 @@ end
 if msg.text == "سپهر" then
 	return "رفته توالت وایسا بیاد"
 end
+if msg.text == "مبینا" then
+	return "لال شو اسمشو نیار :|"
+end
 if msg.text == "امیر" then
 	return "با باباییم چیکار داری؟ 😐"
 end
 if msg.text == "امیر دارک" then
 	return "با باباییم چیکار داری؟ 😐"
+end
+if msg.text == "کله شیری" then
+	return "باباته کله کیییری 😐"
+end
+if msg.text == "زن امیر دارک اسمش چیه؟" then
+	return "زن امیر دارک میشه مامان من کونی 😕"
+end
+if msg.text == "بات" then
+	return "چیه چس ممبر 🤔"
+end
+if msg.text == "ربات" then
+	return "چیه چس ممبر 🤔"
+end
+if msg.text == "سید" then
+	return "چچچ سیک"
+end
+if msg.text == "تله سید" then
+	return "چچچ سیک"
+end
+if msg.text == "خوبی" then
+	return "شکر خدا شما خوبی"
+end
+if msg.text == "خوبی؟" then
+	return "مرسی عزیزم تو خوبی؟"
+end
+if msg.text == "زامارین خوبی؟" then
+	return "مرسی 😁"
 end
 end
 
@@ -84,6 +126,9 @@ return {
     "^[Aa]min$",
     "^[Mm]amshotak$",
     "^?$",
+    "^؟$",
+    "^BK$",
+    "^[Kk]ir$",
 	"^[Bb]ye$",
 	"^سلام زامارین",
   "^زامارین سلام",
@@ -92,9 +137,19 @@ return {
 	"^زامارین",
 	"^ایلیا",
 	"^سپهر",
+	"^مبینا",
 	"^امیر",
 	"^امیر دارک",
-	
+	"^کله شیری",
+	"^زن امیر دارک اسمش چیه؟",	
+	"^بات",
+	"^ربات",
+	"^سید",
+	"^تله سید",
+	"^خوبی",
+	"^خوبی؟",
+	"^زامارین خوبی؟",
+		
 		}, 
 	run = run,
     --privileged = true,
