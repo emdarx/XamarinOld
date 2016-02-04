@@ -216,7 +216,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "⚙ تنظیمات گروه :\n< قفل نام گروه : "..settings.lock_name.."\n< قفل تصویر گروه : "..settings.lock_photo.."\n< قفل عضوگیری گروه : "..settings.lock_member.."\n< قفل لفت بن : "..leave_ban.."\n< قفل جوین گروه : "..settings.lock_join.."\n< قفل ارسال تگ : "..settings.antitag.."\n< قفل ارسال لینک : "..settings.antilink.."\n< حساسیت ضد اسپم : "..NUM_MSG_MAX.."\n< محافظت در برابر ربات : "..bots_protection--"‌‌‌\nPublic: "..public
+ local text = "⚙ تنظیمات گروه :\n\n> قفل نام گروه : "..settings.lock_name.."\n> قفل تصویر گروه : "..settings.lock_photo.."\n> قفل عضوگیری گروه : "..settings.lock_member.."\n> قفل لفت بن : "..leave_ban.."\n> قفل جوین گروه : "..settings.lock_join.."\n> قفل ارسال تگ : "..settings.antitag.."\n> قفل ارسال لینک : "..settings.antilink.."\n< حساسیت ضد اسپم : "..NUM_MSG_MAX.."\n> محافظت در برابر ربات : "..bots_protection--"\n‌Public: "..public
   return text
 end
 
