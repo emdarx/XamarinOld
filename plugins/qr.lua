@@ -1,8 +1,5 @@
---[[
-* qr plugin uses:
-* - http://goqr.me/api/doc/create-qr-code/
-* psykomantis
-]]
+--- https://github.com/amirhmz
+--- https://telegram.me/AmirDark
 
 local function get_hex(str)
   local colors = {
@@ -83,3 +80,6 @@ return {
   },
   run = run
 }
+
+--- https://github.com/amirhmz
+--- https://telegram.me/AmirDark
