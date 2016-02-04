@@ -2,7 +2,7 @@ package.path = package.path .. ';.luarocks/share/lua/5.2/?.lua'
   ..';.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
-require("./bot/utilsFUCK")
+require("./bot/utils")
 
 VERSION = '1.0'
 
@@ -263,7 +263,7 @@ function create_config( )
 📝 Please send your feedback
 The command /feedback [text]
   
-⚡️ Checkout yon.ir/XamarinTG
+Checkout yon.ir/XamarinTG
 ]],
     help_text_realm = [[
     
