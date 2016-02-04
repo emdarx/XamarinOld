@@ -1,3 +1,7 @@
+--- Spammer Plugin For Xamarin v1.0
+--- https://github.com/amirhmz
+--- https://telegram.me/AmirDark
+
 local function run(msg, matches)
 
   local receiver = get_receiver(msg)
@@ -17,3 +21,6 @@ return {
   },
   run = run,
 }
+
+--- https://github.com/amirhmz
+--- https://telegram.me/AmirDark
