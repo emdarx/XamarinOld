@@ -129,7 +129,7 @@ local function disable_plugin_on_chat(receiver, plugin)
   _config.disabled_plugin_on_chat[receiver][plugin] = true
 
   save_config()
-  return 'Plugin '..plugin..' disabled on this group'
+  return '⛔️ پلاگین '..plugin..' در این گروه غیر فعال شد.'
 end
 
 local function reenable_plugin_on_chat(receiver, plugin)
