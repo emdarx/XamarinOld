@@ -17,15 +17,6 @@ end
 if msg.text == "salam" then
 	return "Salam"
 end
-if msg.text == "TeleDark" then    
-	return "Best Bot In The World!"
-end
-if msg.text == "teledark" then
-	return "Best Bot In The World!"
-end
-if msg.text == "Teledark" then
-	return "Best Bot In The World!"
-end
 if msg.text == "amir" then
 	return "Ha?"
 end
@@ -42,7 +33,7 @@ if msg.text == "mamshotak" then
 	return "Nagaiiidam!"
 end
 if msg.text == "Mamshotak" then
-	return "Nagaiidam :|"
+	return "چچچ نگاییدم"
 end
 if msg.text == "?" then
 	return "Chiye?"
@@ -60,13 +51,13 @@ if msg.text == "زامارین سلام" then
 	return "سلام عزیزم :)"
 end
 if msg.text == "ممشوتک" then
-	return "نگاییدم حاجی"
+	return "چچچ نگاییدم"
 end
 if msg.text == "امین" then
 	return "رفته استخر :|"
 end
 if msg.text == "زامارین" then
-	return "جونم؟"
+	return "ها جیه؟"
 end
 if msg.text == "ایلیا" then
 	return "با جیگرم چیکار داری؟"
@@ -75,10 +66,10 @@ if msg.text == "سپهر" then
 	return "رفته توالت وایسا بیاد"
 end
 if msg.text == "امیر" then
-	return "کدوم امیر؟"
+	return "با باباییم چیکار داری؟ 😐"
 end
 if msg.text == "امیر دارک" then
-	return "این آی دیشه @AmirDark"
+	return "با باباییم چیکار داری؟ 😐"
 end
 end
 
@@ -89,8 +80,6 @@ return {
     "^[Hh]i$",
 	"^[Hh]ello$",
     "^[Ss]alam$",
-    "^TeleDark$",
-    "^[Tt]eledark$",
     "^[Aa]mir$",
     "^[Aa]min$",
     "^[Mm]amshotak$",
