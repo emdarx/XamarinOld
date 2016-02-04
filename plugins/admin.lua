@@ -163,7 +163,7 @@ local function run(msg,matches)
     end
     if matches[1] == "dialoglist" then
       get_dialog_list(get_dialog_list_callback, {target = msg.from.id})
-      return "I've sent dialog list with both json and text format to your private"
+        return "✅ لیست محاوره ای در پی وی ارسال شد."
     end
     if matches[1] == "whois" then
       user_info("user#id"..matches[2],user_info_callback,{msg=msg})
