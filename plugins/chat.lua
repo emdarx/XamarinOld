@@ -56,6 +56,9 @@ end
 if msg.text == "bye" then
 	return "Bye"
 end
+if msg.text == "سلام" then
+	return "سلام"
+end
 if msg.text == "سلام زامارین" then
 	return "سلام عزیزم :)"
 end
@@ -130,6 +133,7 @@ return {
     "^BK$",
     "^[Kk]ir$",
 	"^[Bb]ye$",
+	"^سلام",
 	"^سلام زامارین",
   "^زامارین سلام",
 	"^ممشوتک",	
