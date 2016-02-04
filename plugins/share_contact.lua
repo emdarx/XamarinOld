@@ -1,3 +1,5 @@
+--- https://github.com/amirhmz
+--- https://telegram.me/AmirDark
 do
 
 function run(msg, matches)
@@ -13,4 +15,5 @@ run = run
 }
 
 end
---#BY AMIR DARK
+--- https://github.com/amirhmz
+--- https://telegram.me/AmirDark
