@@ -242,6 +242,7 @@ function create_config( )
     "tosupport",
     "google",
     "weather",
+    "getplug",
     "plugins",
     "all",
     },
