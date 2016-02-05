@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '1.0'
+VERSION = '2'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -15,7 +15,7 @@ function on_msg_receive (msg)
   local receiver = get_receiver(msg)
   print (receiver)
 
-   --vardump(msg)
+  --vardump(msg)
   msg = pre_process_service_msg(msg)
   if msg_valid(msg) then
     msg = pre_process_msg(msg)
@@ -248,7 +248,7 @@ function create_config( )
     sudo_users = {119626024,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[⚡️ Xamarin Anti Spam Bot v1.5
+    about_text = [[⚡️ Xamarin Anti Spam Bot v1.7
     
   📢 Channel : @DarkBotCh
   👤 Admin : @AmirDark
@@ -259,14 +259,13 @@ function create_config( )
         @PokerFace_Dev
         @MR_Flat
         @SinAw1
-
 📝 Please send your feedback
 The command /feedback [text]
   
 Checkout yon.ir/XamarinTG
 ]],
     help_text_realm = [[
-    
+  
 📝 لیست دستورات Realm :
 
 ✏️ ساخت یک گروه جدید
@@ -327,7 +326,6 @@ Checkout yon.ir/XamarinTG
 !bc [کد گروه] [متن پیام]
 
 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
-
 ⚠️  شما ميتوانيد از ! و / استفاده کنيد. 
 
 ⚠️ تنها مدیران ربات و سودو ها
@@ -407,7 +405,7 @@ Checkout yon.ir/XamarinTG
 📌 دريافت لينک گروه در پی وی
 !linkpv
 
-🛃 انتخاب مدير اصلی گروه
+🛃 انتخاب مالک گروه
 !setowner [یوزر آی دی]
 
 🔢 تغيير حساسيت ضد اسپم
@@ -541,6 +539,7 @@ function load_plugins()
 
     if not ok then
       print('\27[31mError loading plugin '..v..'\27[39m')
+      print(tostring(io.popen("lua plugins/"..v..".lua"):read('*all')))
       print('\27[31m'..err..'\27[39m')
     end
 
