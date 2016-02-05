@@ -43,8 +43,7 @@ local function action_by_reply(extra, success, result)
              ..'› کد کاربری : '..result.from.id..'\n'
              ..msgs..'\n'
              ..'› مقام : '..who..'\n\n'
-             ..'› کد گروه : '..msg.to.id..'\n'
-             ..'› نام گروه : '..(user_print_name(msg.to)'\nِ'
+             ..'› کد گروه : '..msg.to.id..'\nِ'
               
   send_large_msg(extra.receiver, text)
 end
@@ -57,7 +56,8 @@ end
 
 return {
     patterns = {
-      "^([Ii]nfo)$"
+      "^([Ii]nfo)$",
+      "^[!/](info)$"
     },
   run = run
 }
