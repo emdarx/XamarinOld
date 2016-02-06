@@ -1,3 +1,5 @@
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
 
 local function run(msg, matches)
   local text = matches[1]
@@ -5,7 +7,7 @@ local function run(msg, matches)
 
   while b ~= 0 do
     text = text:trim()
-    text,b = text:gsub('^!+','')
+    text,b = text:gsub('^!+/','')
   end
   return text
 end
@@ -14,7 +16,12 @@ return {
   description = "Simplest plugin ever!",
   usage = "!echo [whatever]: echoes the msg",
   patterns = {
-    "^[!/]echo +(.+)$"
+    "^[!/][Ee]cho +(.+)$",
+    "^[Ee]cho +(.+)$",
+    "^بگو +(.+)$"
   }, 
   run = run 
 }
+
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
