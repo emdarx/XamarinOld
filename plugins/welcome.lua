@@ -1,3 +1,6 @@
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
+
 local add_user_cfg = load_from_file('data/add_user_cfg.lua')
 
 local function template_add_user(base, to_username, from_username, chat_name, chat_id)
@@ -102,3 +105,5 @@ return {
    },
    run = run
 }
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
