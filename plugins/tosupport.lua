@@ -1,6 +1,5 @@
 --- https://github.com/amirhmz
 --- https://telegram.me/AmirDark
-
 do
 
 function run(msg, matches)
@@ -10,14 +9,11 @@ return {
   description = "shows support link", 
   usage = "!tosupport : Return supports link",
   patterns = {
-    "^tosupport$",
-    "^/tosupport$",
-    "^!tosupport$",
-    "^>tosupport$",
+    "^([!/]tosupport)$",
+    "^(tosupport)$"
   },
   run = run
 }
 end
-
 --- https://github.com/amirhmz
 --- https://telegram.me/AmirDark
