@@ -209,6 +209,7 @@ function create_config( )
   config = {
     enabled_plugins = {
     "onservice",
+    "welcome",
     "admin",
     "addsudo",
     "inrealm",
@@ -454,6 +455,12 @@ Checkout yon.ir/XamarinTG
 
 🎤 غیر فعال کردن قابلیت چت با ربات
 !plugins - chat group
+
+📝 فعال کردن پیام خوش آمد گویی
+!plugins + welcome group
+
+📝 غیر فعال کردن پیام خوش آمد گویی
+!plugins - welcome group
 
 🃏 ساخت عکس نوشته
 !tex [متن]
