@@ -1,3 +1,5 @@
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
 do
 
 function run(msg, matches)
@@ -6,9 +8,12 @@ end
 
 return {
     patterns = {
-    "^فحش بده به (.*)$"
+    "^فحش بده به (.*)$",
+    "^[Ff]osh [Bb]ede [Bb]e (.*)$",
   }, 
   run = run 
 }
 
 end
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
