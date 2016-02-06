@@ -1,3 +1,5 @@
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
 local function set_bot_photo(msg, success, result)
   local receiver = get_receiver(msg)
   if success then
@@ -140,14 +142,14 @@ local function run(msg,matches)
     end
     if matches[1] == "block" then
     	if is_admin2(matches[2]) then
-    		return "You can't block admins"
+    	return "⛔️ نمیتوانید ادمین را بلاک کنید"
     	end
     	block_user("user#id"..matches[2],ok_cb,false)
     	return "⛔️ کاربر بلاک شد."
     end
     if matches[1] == "unblock" then
     	unblock_user("user#id"..matches[2],ok_cb,false)
-    	return "⛔️ کاربر آن بلاک شد."
+      return "⛔️ کاربر آنبلاک شد."
     end
     if matches[1] == "import" then--join by group link
     	local hash = parsed_url(matches[2])
@@ -163,7 +165,7 @@ local function run(msg,matches)
     end
     if matches[1] == "dialoglist" then
       get_dialog_list(get_dialog_list_callback, {target = msg.from.id})
-        return "✅ لیست محاوره ای در پی وی ارسال شد."
+       return "✅ لیست محاوره ای در پی وی ارسال شد."
     end
     if matches[1] == "whois" then
       user_info("user#id"..matches[2],user_info_callback,{msg=msg})
@@ -179,13 +181,24 @@ return {
 	"^[!/](markread) (on)$",
 	"^[!/](markread) (off)$",
 	"^[!/](setbotphoto)$",
-	"%[(photo)%]",
 	"^[!/](contactlist)$",
 	"^[!/](dialoglist)$",
 	"^[!/](delcontact) (%d+)$",
-	"^[!/](whois) (%d+)$"
+	"^[!/](whois) (%d+)$",
+	"^(pm) (%d+) (.*)$",
+	"^(import) (.*)$",
+	"^(unblock) (%d+)$",
+	"^(block) (%d+)$",
+	"^(markread) (on)$",
+	"^(markread) (off)$",
+	"^(setbotphoto)$",
+	"^(contactlist)$",
+	"^(dialoglist)$",
+	"^(delcontact) (%d+)$",
+	"^(whois) (%d+)$",
+	"%[(photo)%]",
   },
   run = run,
 }
---By @AmirDark :)
+--Edit By @AmirDark :) Thanks to Iman Daneshi
 --https://github.com/amirhmz/Xamarin/blob/master/plugins/admin.lua
