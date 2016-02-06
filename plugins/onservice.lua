@@ -1,4 +1,3 @@
--- Auto Leave ( Block and Ban Global) V1.2 For Xamarin Source
 do
 -- Will leave the group if be added
 local function run(msg, matches)
