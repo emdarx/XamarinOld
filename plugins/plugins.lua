@@ -142,7 +142,7 @@ local function reenable_plugin_on_chat(receiver, plugin)
   end
 
   if not _config.disabled_plugin_on_chat[receiver][plugin] then
-    return '⛔️ این افزونه غیر فعال نیست.'
+    return '✅ این افزونه فعال است.'
   end
 
   _config.disabled_plugin_on_chat[receiver][plugin] = false
