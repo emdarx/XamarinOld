@@ -1,5 +1,3 @@
-https://github.com/amirhmz/
-https://telegram.me/AmirDark
 do
 
 -- Returns the key (index) in the config.enabled_plugins table
