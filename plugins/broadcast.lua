@@ -1,3 +1,5 @@
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
 local function run(msg, matches)
 	if matches[1] == 'bc' and is_admin(msg) then
 		local response = matches[3]
@@ -19,7 +21,11 @@ end
 return {
   patterns = {
     "^[!/](broadcast) +(.+)$",
-    "^[!/](bc) (%d+) (.*)$"
+    "^[!/](bc) (%d+) (.*)$",
+    "^(broadcast) +(.+)$",
+    "^(bc) (%d+) (.*)$"
   },
   run = run
 }
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
