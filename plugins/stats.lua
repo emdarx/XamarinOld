@@ -140,8 +140,9 @@ return {
     "^[!/]([Ss]tats)$",
     "^[!/]([Ss]tatslist)$",
     "^[!/]([Ss]tats) (group) (%d+)",
-    "^[!/]([Ss]tats) (xamarin)",-- Put everything you like :)
-		"^[!/](Xx]amarin)"-- Put everything you like :)
+    "^[!/]([Ss]tats) (xamarin)",
+		"^[!/]([Xx]amarin)",
+		"^([Xx]amarin)"
     }, 
   run = run
 }
