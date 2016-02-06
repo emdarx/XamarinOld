@@ -337,7 +337,7 @@ return {
     "^([Kk]ickme)$",
     "^([Bb]an)$",
     "^([Uu]nban)$",
-    "^([Ii]d)$",
+    "^([Ii][Dd])$",
     "^!!tgservice (.+)$"
   },
   run = run,
