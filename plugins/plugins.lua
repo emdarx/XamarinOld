@@ -39,7 +39,7 @@ local function list_all_plugins(only_enabled)
     if not only_enabled or status == '✔' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
-      text = text..nsum..'> '..status..' '..v..'\n'
+      text = text..nsum..'. '..status..' '..v..'\n'
     end
   end
    local text = text..'\nدر مجموع '..nsum..' افزونه وجود دارد.\n'..nact..' افزونه فعال و '..nsum-nact..' افزونه غیر فعال.'
