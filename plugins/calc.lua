@@ -1,4 +1,6 @@
 -- Function reference: http://mathjs.org/docs/reference/functions/categorical.html
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
 
 local function mathjs(exp)
   local url = 'http://api.mathjs.org/v1/'
@@ -25,7 +27,10 @@ return {
   description = "Calculate math expressions with mathjs API",
   usage = "!calc [expression]: evaluates the expression and sends the result.",
   patterns = {
-    "^[!/]calc (.*)$"
+    "^[!/]calc (.*)$",
+    "^calc (.*)$"
   },
   run = run
 }
+-- https://github.com/amirhmz/
+-- https://telegram.me/AmirDark/
