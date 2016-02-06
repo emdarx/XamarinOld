@@ -2,7 +2,7 @@ package.path = package.path .. ';.luarocks/share/lua/5.2/?.lua'
   ..';.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
-require("./bot/utils")
+require("./bot/utilsLUA")
 
 VERSION = '2'
 
@@ -250,17 +250,18 @@ function create_config( )
     sudo_users = {119626024,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[⚡️ Xamarin Anti Spam Bot v1.7
+    about_text = [[⚡️ Xamarin Anti Spam Bot v1.6
     
-  📢 Channel : @DarkBotCh
+  📢 Channel : @DarkBot
   👤 Admin : @AmirDark
   
-  🙏 Special Thanks :
+  🙏 Special Thanks to :
   
-        @mehrab_wj
         @PokerFace_Dev
+        @ShahabDark
         @MR_Flat
         @SinAw1
+        
 📝 Please send your feedback
 The command /feedback [text]
   
@@ -327,7 +328,8 @@ Checkout yon.ir/XamarinTG
 📢 ارسال پیام به یک گروه خاص
 !bc [کد گروه] [متن پیام]
 
-🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
 ⚠️  شما ميتوانيد از ! و / استفاده کنيد. 
 
 ⚠️ تنها مدیران ربات و سودو ها
