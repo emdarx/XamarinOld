@@ -24,7 +24,7 @@ function run(msg, matches)
     return
   end
   if not is_sudo(msg) then -- For Sudo only !
-    return 'Only Sudo can invite.'
+    return '⛔️ Only Sudo can Invite.'
   end
 	local cbres_extra = {chatid = msg.to.id}
   local username = matches[1]
@@ -33,7 +33,8 @@ function run(msg, matches)
 end
 return {
     patterns = {
-      "^[!/]invite (.*)$"
+      "^[!/]invite (.*)$",
+      "^invite (.*)$"
     },
     run = run
 }
