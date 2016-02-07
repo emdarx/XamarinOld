@@ -254,7 +254,7 @@ function create_config( )
     moderation = {data = 'data/moderation.json'},
     about_text = [[⚡️ Xamarin Anti Spam Bot v1.6
     
-  📢 Channel : @DarkBot
+  📢 Channel : @DarkTeam
   👤 Admin : @AmirDark
   
   🙏 Special Thanks to :
