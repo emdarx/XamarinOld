@@ -244,6 +244,7 @@ function create_config( )
     "tosupport",
     "google",
     "weather",
+    "addplug",
     "getplug",
     "plugins",
     "all",
