@@ -1,6 +1,6 @@
 ***
 # <p align="center">Xamarin (Zamarin)
-####<p align="center">**Telegram Group Manager For Iranian User**
+####<p align="center">**The Pro Telegram Group Manager**
 <p align="center">Created By ♥ In Iran
 ***
 
