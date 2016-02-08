@@ -224,7 +224,7 @@ function create_config( )
     "lock_link",
     "lock_tag",
     "lock_eng",
-    "lock_badwords",
+    "lock_badword",
     "arabic_lock",
     "owners",
     "set",
