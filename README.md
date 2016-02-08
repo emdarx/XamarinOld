@@ -26,12 +26,17 @@ git clone https://github.com/amirhmz/Xamarin.git
 cd Xamarin
 chmod +x ./launch.sh
 ./launch.sh install
+cd tg 
+rm lua-tg.c # And Paste Lua-tg.c to tg Folder
+make && cd # For Support Sticker Operation
 ./launch.sh # Enter a phone number & confirmation code.
 ```
 ##One Command :) 
 ```bash
 sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/amirhmz/Xamarin.git && cd Xamarin && ./launch.sh install && ./launch.sh
 ```
+* Note : put lua-tg.c in /root/Xamarin/tg/ then reboot the server
+
 ***
 ### Realm Configuration
 
