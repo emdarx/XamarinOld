@@ -269,7 +269,7 @@ function create_config( )
 📝 Please send your feedback
 The command /feedback [text]
   
-Checkout yon.ir/XamarinTG
+Checkout yeo.ir/Xamarin
 ]],
     help_text_realm = [[
   
