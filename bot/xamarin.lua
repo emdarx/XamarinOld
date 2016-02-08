@@ -219,12 +219,14 @@ function create_config( )
     "banhammer",
     "stats",
     "anti_spam",
-    "antitag",
-    "antilink",
-    "lock_join",
     "xamar",
-    "owners",
+    "lock_join",
+    "lock_link",
+    "lock_tag",
+    "lock_eng",
+    "lock_badwords",
     "arabic_lock",
+    "owners",
     "set",
     "get",
     "broadcast",
@@ -252,7 +254,7 @@ function create_config( )
     sudo_users = {119626024,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[⚡️ Xamarin Anti Spam Bot v1.6
+    about_text = [[⚡️ Xamarin Anti Spam Bot v1.7
     
   📢 Channel : @DarkTeam
   👤 Admin : @AmirDark
@@ -391,10 +393,10 @@ Checkout yon.ir/XamarinTG
 !set about [متن مورد نظر]
 
 🔒 قفل اعضا ، نام گروه ، ربات و ...
-!lock [member|name|bots|tag|link|fosh|join|arabic|english]
+!lock [member|name|bots|tag|adds|badw|join|arabic|eng|sticker|leave]
 
 🔓 باز کردن قفل اعضا ، نام گروه و ...
-!unlock [member|name|bots|tag|link|fosh|join|arabic|english]
+!unlock [member|name|bots|tag|adds|badw|join|arabic|eng|sticker|leave]
 
 📥 دريافت یوزر آی دی گروه يا کاربر
 !id
