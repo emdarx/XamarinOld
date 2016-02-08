@@ -12,6 +12,10 @@ end
  end
  end
 return {
+   usage = {
+      "lock join: Nobody Can't Join Group Via Link.",
+      "unlock Join: User Can Join Group Via Link.",
+      },
   patterns = {
     "^!!tgservice (chat_add_user_link)$"
   },
