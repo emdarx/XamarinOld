@@ -1413,7 +1413,7 @@ local function run(msg, matches)
       local is_sticker_offender = redis:get(sticker_hash)
     if settings.sticker == 'kick' then
         chat_del_user(receiver, 'user#id'..user_id, ok_cb, true)
-        return 'Sticker Protection enabled! Dont Send Sticker!'
+        return '⛔️ ارسال استیکر مجاز نمیباشد.'
       elseif settings.sticker == 'ok' then
         return nil
       end
