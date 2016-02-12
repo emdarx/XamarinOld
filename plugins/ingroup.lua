@@ -1487,6 +1487,9 @@ local function run(msg, matches)
           msgr = get_message(msg.reply_id, setowner_by_reply, false)
       end
     end
+    if matches[1] == 'xamarin' then
+    	return "⚡️ Xamarin ⚡️\nThe powerful Anti Spam source\nDeveloper : @AmirDark\nFor more info Check ow.ly/YdAB1"
+    end
     if matches[1] == 'owner' then
       local group_owner = data[tostring(msg.to.id)]['set_owner']
       if not group_owner then 
@@ -1676,6 +1679,7 @@ return {
   "^[!/](newlink)$",
   "^[!/](link)$",
   "^[!/](linkpv)$",
+  "^[!/]([xamarin)$",
   "^[!/](kickinactive)$",
   "^[!/](kickinactive) (%d+)$",
   "^([Aa]dd)$",
@@ -1704,6 +1708,7 @@ return {
   "^([Nn]ewlink)$",
   "^([Ll]ink)$",
   "^([Ll]inkpv)$",
+  "^([Xx]amarin)$",
   "%[(photo)%]",
   "^!!tgservice (.+)$",
   "%[(audio)%]",
