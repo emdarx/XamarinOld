@@ -2,7 +2,7 @@ package.path = package.path .. ';.luarocks/share/lua/5.2/?.lua'
   ..';.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
-require("./bot/utilsLUA")
+require("./bot/utils")
 
 VERSION = '2'
 
@@ -254,7 +254,7 @@ function create_config( )
     sudo_users = {119626024,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[⚡️ Xamarin Anti Spam Bot v1.7
+    about_text = [[⚡️ Xamarin Anti Spam Bot v1.8
     
   📢 Channel : @DarkTeam
   👤 Admin : @AmirDark
@@ -264,7 +264,7 @@ function create_config( )
         @PokerFace_Dev
         @ShahabDark
         @MR_Flat
-        @SinAw1
+        @SinaSereen
         
 📝 Please send your feedback
 The command /feedback [text]
