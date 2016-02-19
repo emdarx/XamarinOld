@@ -1,7 +1,7 @@
     --Joke Plugin v1.0 By @AmirDark
     --https://github.com/amirhmz
     --Telegram.me/AmirDark
-local database = 'http://upfile.ir.tn/upload/amirhmz/'
+local database = 'http://vip.opload.ir/vipdl/94/11/amirhmz/'
 local function run(msg)
 	local res = http.request(database.."joke.db")
 	local joke = res:split(",")
