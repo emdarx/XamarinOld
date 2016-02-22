@@ -1,5 +1,3 @@
--- https://github.com/amirhmz/
--- https://telegram.me/AmirDark/
 local function set_bot_photo(msg, success, result)
   local receiver = get_receiver(msg)
   if success then
@@ -8,7 +6,7 @@ local function set_bot_photo(msg, success, result)
     os.rename(result, file)
     print('File moved to:', file)
     set_profile_photo(file, ok_cb, false)
-    send_large_msg(receiver, '✅ تصویر پروفایل تنظیم شد!', ok_cb, false)
+    send_large_msg(receiver, 'Photo changed!', ok_cb, false)
     redis:del("bot:photo")
   else
     print('Error downloading: '..msg.id)
@@ -123,33 +121,33 @@ local function run(msg,matches)
     end
     if matches[1] == "setbotphoto" then
     	redis:set("bot:photo", "waiting")
-    	return '🌠 تصویر ربات را ارسال کنید :'
+    	return 'Please send me bot photo now'
     end
     if matches[1] == "markread" then
     	if matches[2] == "on" then
     		redis:set("bot:markread", "on")
-    		return "دو تیک » فعال ✅"
+    		return "Mark read > on"
     	end
     	if matches[2] == "off" then
     		redis:del("bot:markread")
-    		return "دو تیک » غیر فعال ⛔️"
+    		return "Mark read > off"
     	end
     	return
     end
     if matches[1] == "pm" then
     	send_large_msg("user#id"..matches[2],matches[3])
-    	return "✅ پیام در پی وی ارسال شد."
+    	return "Msg sent"
     end
     if matches[1] == "block" then
     	if is_admin2(matches[2]) then
-    	return "⛔️ نمیتوانید ادمین را بلاک کنید"
+    		return "You can't block admins"
     	end
     	block_user("user#id"..matches[2],ok_cb,false)
-    	return "⛔️ کاربر بلاک شد."
+    	return "User blocked"
     end
     if matches[1] == "unblock" then
     	unblock_user("user#id"..matches[2],ok_cb,false)
-      return "⛔️ کاربر آنبلاک شد."
+    	return "User unblocked"
     end
     if matches[1] == "import" then--join by group link
     	local hash = parsed_url(matches[2])
@@ -157,18 +155,33 @@ local function run(msg,matches)
     end
     if matches[1] == "contactlist" then
       get_contact_list(get_contact_list_callback, {target = msg.from.id})
-      return "✅ لیست مخاطبین در پی وی ارسال شد."
+      return "I've sent contact list with both json and text format to your private"
     end
     if matches[1] == "delcontact" then
       del_contact("user#id"..matches[2],ok_cb,false)
-      return "⛔️ کاربر "..matches[2].." از مخاطبین حذف شد."
+      return "User "..matches[2].." removed from contact list"
     end
     if matches[1] == "dialoglist" then
       get_dialog_list(get_dialog_list_callback, {target = msg.from.id})
-       return "✅ لیست محاوره ای در پی وی ارسال شد."
+      return "I've sent dialog list with both json and text format to your private"
     end
     if matches[1] == "whois" then
       user_info("user#id"..matches[2],user_info_callback,{msg=msg})
+    end
+    if matches[1] == "sync_gbans" then
+    	if not is_sudo(msg) then-- Sudo only
+    		return
+    	end
+    	local url = "http://seedteam.ir/Teleseed/Global_bans.json"
+    	local SEED_gbans = http.request(url)
+    	local jdat = json:decode(SEED_gbans)
+    	for k,v in pairs(jdat) do
+  		if not tonumber(v) == tonumber(our_id) and not is_admin2(v) then-- Ignore bot and admins :)
+  			redis:hset('user:'..v, 'print_name', k)
+  			redis:sadd('gbanned', v)
+      			print(k, v.." Globally banned")
+      		end
+    	end
     end
     return
 end
@@ -181,24 +194,12 @@ return {
 	"^[!/](markread) (on)$",
 	"^[!/](markread) (off)$",
 	"^[!/](setbotphoto)$",
+	"%[(photo)%]",
 	"^[!/](contactlist)$",
 	"^[!/](dialoglist)$",
 	"^[!/](delcontact) (%d+)$",
 	"^[!/](whois) (%d+)$",
-	"^(pm) (%d+) (.*)$",
-	"^(import) (.*)$",
-	"^(unblock) (%d+)$",
-	"^(block) (%d+)$",
-	"^(markread) (on)$",
-	"^(markread) (off)$",
-	"^(setbotphoto)$",
-	"^(contactlist)$",
-	"^(dialoglist)$",
-	"^(delcontact) (%d+)$",
-	"^(whois) (%d+)$",
-	"%[(photo)%]",
+	"^/(sync_gbans)$"--sync your global bans with seed
   },
   run = run,
 }
---Edit By @AmirDark :) Thanks to Iman Daneshi
---https://github.com/amirhmz/Xamarin/blob/master/plugins/admin.lua
