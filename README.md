@@ -70,7 +70,7 @@ and start again
 # Contact Me
 | Bot | Channel | Telegram | Email |
 |---------|--------|-------| ----- |
-| [Bot](https://telegram.me/XamarinTG) | [Join](https://telegram.me/DarkBotCh) | [Developer](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) |
+| [Bot](https://telegram.me/XamarinTG) | [Join](https://telegram.me/DarkTeam) | [Developer](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) 
 
 > _If you are using /join service for first time_
 >> _you have to send it 11 time ( Bot is spam reported )_
