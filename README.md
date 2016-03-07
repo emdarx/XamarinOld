@@ -22,8 +22,8 @@ git clone --recursive https://github.com/amirhmz/tg.git && cd tg
 ```bash
 # را نصب و اجرا میکنیم Bot و در آخر
 cd $HOME
-git clone https://github.com/amirhmz/Xamarin.git
-cd Xamarin
+git clone https://github.com/amirhmz/XamarinTG.git
+cd XamarinTG
 chmod +x ./launch.sh
 ./launch.sh install
 cd tg 
@@ -33,9 +33,9 @@ make && cd # For Support Sticker Operation
 ```
 ##One Command :) 
 ```bash
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/amirhmz/Xamarin.git && cd Xamarin && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/amirhmz/XamarinTG.git && cd XamarinTG && ./launch.sh install && ./launch.sh
 ```
-* Note : put lua-tg.c in /root/Xamarin/tg/ then reboot the server
+* Note : put lua-tg.c in /root/XamarinTG/tg/ then reboot the server
 
 ***
 ### Realm Configuration
