@@ -14,16 +14,11 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ```
 
 ```bash
-# را نصب میکنیم Telegram Cli سپس
-cd $HOME
-git clone --recursive https://github.com/amirhmz/tg.git && cd tg
-```
-
-```bash
-# را نصب و اجرا میکنیم Bot و در آخر
+# را نصب و اجرا میکنیم Bot سپس
 cd $HOME
 git clone https://github.com/amirhmz/XamarinTG.git
 cd XamarinTG
+git clone --recursive https://github.com/amirhmz/tg.git
 chmod +x ./launch.sh
 ./launch.sh install
 cd tg 
